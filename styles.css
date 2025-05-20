@@ -1,0 +1,500 @@
+/* MOBILE FIRST - Estilos base para telas pequenas */
+:root {
+    --color-dark: #1d1f27;
+    --color-dark-secondary: #283039;
+    --color-gold: #f9b000;
+    --color-orange: #ff7300;
+    --color-white: #ffffff;
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(29, 31, 39, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 0.75rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--color-gold);
+}
+
+/* HERO */
+.hero {
+    padding: 90px 0 40px;
+    background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-secondary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.hero-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+.hero-content h3 {
+    font-size: 1.1rem;
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+}
+.btn-primary {
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+    border: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+.btn-primary:hover {
+    background-color: var(--color-orange);
+    transform: translateY(-2px);
+}
+.hero-image {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* BENEFÍCIOS */
+.benefits {
+    padding: 40px 0;
+    background-color: var(--color-dark-secondary);
+}
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.benefit-card {
+    background-color: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.benefit-card .icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+}
+.benefit-card h3 {
+    color: var(--color-gold);
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+
+/* VÍDEO */
+.video-section {
+    padding: 40px 0;
+    background-color: var(--color-dark);
+}
+.video-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem auto 0 auto;
+    background-color: var(--color-dark-secondary);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.5rem;
+}
+.video-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* DEPOIMENTOS */
+.testimonials {
+    padding: 40px 0;
+    background-color: var(--color-dark-secondary);
+}
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.testimonial-card {
+    background-color: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.testimonial-card p {
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+.testimonial-author h4 {
+    margin-bottom: 0.3rem;
+    color: var(--color-gold);
+    font-size: 1rem;
+}
+.testimonial-author span {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* COMPARATIVO */
+.comparison {
+    padding: 40px 0;
+    background-color: var(--color-dark);
+}
+.comparison-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.comparison-card {
+    background-color: var(--color-dark-secondary);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.comparison-card h3 {
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.comparison-card ul {
+    list-style: none;
+}
+.comparison-card li {
+    margin-bottom: 0.7rem;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 1rem;
+}
+.comparison-card li::before {
+    content: "•";
+    color: var(--color-gold);
+    position: absolute;
+    left: 0;
+}
+
+/* PLANOS */
+.plans {
+    padding: 40px 0;
+    background-color: var(--color-dark-secondary);
+}
+.plans-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.plan-card {
+    background-color: var(--color-dark);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.plan-card.featured {
+    background-color: var(--color-dark-secondary);
+    border: 2px solid var(--color-gold);
+}
+.plan-card h3 {
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.plan-card ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+.plan-card li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+.btn-secondary:hover {
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+}
+
+/* FAQ */
+.faq {
+    padding: 40px 0;
+    background-color: var(--color-dark);
+}
+.faq-grid {
+    max-width: 600px;
+    margin: 1.5rem auto;
+}
+
+/* FORMULÁRIO */
+.contact-form {
+    padding: 40px 0;
+    background-color: var(--color-dark-secondary);
+}
+.contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form .btn-primary {
+    align-self: center;
+}
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.contact-form input {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark-secondary);
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: 1rem;
+}
+.contact-form input:focus {
+    outline: none;
+    border-color: var(--color-gold);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-dark);
+    padding: 40px 0 15px;
+}
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img {
+    height: 60px !important;
+    width: auto;
+    object-fit: contain;
+}
+.footer h4 {
+    color: var(--color-gold);
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+.footer-links ul {
+    list-style: none;
+    text-align: center;
+}
+.footer-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+.footer-links a:hover {
+    color: var(--color-gold);
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.95rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.15rem;
+    padding: 0.5rem 0;
+}
+
+.footer-contact h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-gold);
+    text-align: center;
+}
+
+.footer-contact p {
+    margin: 0.2rem 0;
+    text-align: center;
+}
+
+/* BREAKPOINTS - Telas maiores */
+@media (min-width: 600px) {
+    .hero .container {
+        flex-direction: row;
+        gap: 2.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero-content {
+        width: 55%;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-image {
+        width: 45%;
+        max-width: 400px;
+    }
+    .btn-primary {
+        align-self: center;
+        margin-left: 0;
+    }
+    .benefits-grid,
+    .testimonials-grid,
+    .comparison-grid,
+    .plans-grid,
+    .footer-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .benefit-card,
+    .testimonial-card,
+    .comparison-card,
+    .plan-card {
+        flex: 1 1 0;
+        min-width: 220px;
+    }
+    .footer-grid > div {
+        flex: 1 1 0;
+    }
+    .faq-grid {
+        max-width: 800px;
+    }
+    .contact-form form {
+        max-width: 500px;
+    }
+}
+@media (min-width: 900px) {
+    html { font-size: 18px; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content h3 { font-size: 1.3rem; }
+    .benefit-card h3, .plan-card h3, .comparison-card h3 { font-size: 1.2rem; }
+    .footer-logo img { height: 50px; }
+}
+@media (min-width: 1200px) {
+    .container { max-width: 1200px; }
+    .hero-content h1 { font-size: 3rem; }
+}
+
+/* Meteoros continuam responsivos */
+@keyframes meteor {
+    0% { transform: rotate(215deg) translateX(0); opacity: 1; }
+    70% { opacity: 1; }
+    100% { transform: rotate(215deg) translateX(-500px); opacity: 0; }
+}
+.meteor {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(45deg, var(--color-gold), transparent);
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px var(--color-gold));
+    animation: meteor 5s linear infinite;
+}
+.meteor:nth-child(1) { top: 0; left: 80%; animation-delay: 0s; }
+.meteor:nth-child(2) { top: 0; left: 30%; animation-delay: 1s; }
+.meteor:nth-child(3) { top: 0; left: 50%; animation-delay: 2s; }
+.meteor:nth-child(4) { top: 0; left: 70%; animation-delay: 3s; }
+.meteor:nth-child(5) { top: 0; left: 20%; animation-delay: 4s; } 
